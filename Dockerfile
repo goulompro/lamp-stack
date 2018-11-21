@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER Christopher Wendholt <goulom.c.w.98@gmail.com>
 LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 18.04 LTS." \
-        Usage="docker run -d -p [HOST WWW PORT NUMBER]:80 -p [HOST DB PORT NUMBER]:3306 [HOST SSH PORT NUMBER]:22" \
+        Usage="docker run -d -p [HOST WWW PORT NUMBER]:80 -p [HOST DB PORT NUMBER]:3306 [HOST SSH PORT NUMBER]:22 goulompro/lamp-stack" \
         Version="1.0"
 
 RUN apt-get update
