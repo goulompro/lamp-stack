@@ -14,7 +14,7 @@ RUN npm install -g -q bower grunt-cli gulp
 RUN npm install -g -q openssh-server
 
 RUN adduser --disabled-password webadmin --ingroup root
-RUN echo 'passwd "webadmin" | passwd --stdin webadmin'
+RUN echo -e "webadmin" | passwd webadmin
 
 EXPOSE 22
 EXPOSE 80
