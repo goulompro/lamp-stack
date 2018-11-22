@@ -21,5 +21,5 @@ RUN useradd -ms /bin/bash webadmin
 #COPY start.sh /usr/sbin/
 #RUN chmod +x /usr/sbin/start.sh
 #CMD ["/usr/sbin/start.sh"]
-#USER webadmin
-#WORKDIR /home/webadmin
+USER webadmin
+WORKDIR /home/webadmin
