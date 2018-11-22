@@ -13,7 +13,7 @@ RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y -q
 RUN npm install -g -q bower grunt-cli gulp
 
 RUN adduser --disabled-password webadmin --ingroup root
-RUN echo 'passwd "webadmin" | passwd --stdin "webadmin"'
+RUN echo 'passwd "webadmin" | passwd --stdin webadmin'
 
 EXPOSE 22
 EXPOSE 80
