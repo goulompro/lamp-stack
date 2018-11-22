@@ -11,7 +11,7 @@ RUN apt-get install -y -q zip unzip
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
 RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y -q
 RUN npm install -g -q bower grunt-cli gulp
-RUN npm install -g -q openssh-server
+RUN apt-get install -g -q openssh-server
 
 RUN adduser --disabled-password webadmin --ingroup root
 RUN echo -e "webadmin" | passwd webadmin
