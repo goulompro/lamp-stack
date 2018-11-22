@@ -13,13 +13,10 @@ RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y -q
 RUN apt-get install -y -q openssh-server
 RUN npm install -g -q bower grunt-cli gulp
 
-RUN service ssh start
-RUN service apache2 start
-RUN service mysql start
-
-RUN adduser --disabled-password webadmin --ingroup root
-RUN echo '-e "root\nroot" | passwd webadmin'
-
 EXPOSE 22
 EXPOSE 80
 EXPOSE 3306
+
+COPY start.sh /usr/sbin/
+RUN chmod +x /usr/sbin/start.sh
+CMD ["/usr/sbin/start.sh"]
