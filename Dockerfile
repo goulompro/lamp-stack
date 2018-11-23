@@ -20,9 +20,9 @@ EXPOSE 3306
 # User: webadmin Password: webadmin
 RUN useradd -m -g sudo -p 5Y7whX6lpu7oU webadmin
 
-COPY start.sh /usr/sbin/
-RUN chmod +x /usr/sbin/start.sh
-CMD ["/usr/sbin/start.sh"]
+#COPY start.sh /usr/sbin/
+#RUN chmod +x /usr/sbin/start.sh
+#CMD ["/usr/sbin/start.sh"]
 
 USER webadmin
 WORKDIR /home/webadmin
