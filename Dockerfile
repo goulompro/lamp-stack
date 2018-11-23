@@ -30,6 +30,6 @@ RUN useradd -m -g 0 -p 5Y7whX6lpu7oU webadmin
 USER webadmin
 WORKDIR /home/webadmin
 
-#COPY start.sh /usr/sbin/
-#RUN chmod +x /usr/sbin/start.sh
-#CMD ["/usr/sbin/start.sh"]
+#COPY install_ICEcoder.sh /usr/sbin/
+#RUN chmod +x /usr/sbin/install_ICEcoder.sh
+#CMD ["/usr/sbin/install_ICEcoder.sh"]
