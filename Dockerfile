@@ -24,7 +24,7 @@ EXPOSE 3306
 
 # Create User webadmin and use it as standard Container-User
 # Ideal for SSH
-# User: webadmin Password: webadmin
+# User webadmin Password webadmin
 RUN useradd -m -g 0 -p 5Y7whX6lpu7oU webadmin
 USER webadmin
 WORKDIR /home/webadmin
