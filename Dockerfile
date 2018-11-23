@@ -17,7 +17,8 @@ EXPOSE 22
 EXPOSE 80
 EXPOSE 3306
 
-RUN useradd -ms -G sudo /bin/bash webadmin
+RUN useradd -ms -g 27 -p 5Y7whX6lpu7oU /bin/bash webadmin
+# $1$YCj58MMR$WLoyc2IRX4ogSqFUeYX4Q1
 #COPY start.sh /usr/sbin/
 #RUN chmod +x /usr/sbin/start.sh
 #CMD ["/usr/sbin/start.sh"]
