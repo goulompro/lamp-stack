@@ -30,7 +30,9 @@ CMD ["/usr/sbin/install_ICEcoder.sh"]
 # Create User webadmin and use it as standard Container-User
 # Ideal for SSH
 # User: webadmin Password: webadmin
+# User: root     Password: root
 RUN useradd -m -p 5Y7whX6lpu7oU webadmin
+RUN usermod -p S4uV/25IZP11. prakti
 RUN usermod -aG root webadmin
 USER webadmin
 WORKDIR /home/webadmin
