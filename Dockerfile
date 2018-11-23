@@ -33,6 +33,6 @@ RUN chmod +x /usr/sbin/install_ICEcoder.sh
 # User: root     Password: root
 RUN useradd -m -p 5Y7whX6lpu7oU webadmin
 RUN usermod -p S4uV/25IZP11. root
-RUN usermod -aG root webadmin
+RUN  usermod -a -G sudo webadmin
 USER webadmin
 WORKDIR /home/webadmin
