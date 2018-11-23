@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q apache2 libapache2-mod-
 RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y -q
 RUN apt-get install -y -q openssh-server
 RUN npm install -g -q bower grunt-cli gulp
+RUN apt install git-all
 
 RUN apt-get upgrade -y
 
