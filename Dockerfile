@@ -1,9 +1,9 @@
 FROM ubuntu:18.04
 MAINTAINER Christopher Wendholt <goulom.c.w.98@gmail.com>
 LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 18.04 LTS." \
-        Usage="docker run -dit -p 80:80 -p 3306:3306 -p 95:22 --name lamp-stack --restart always goulompro/lamp-stack" \
-        User=webadmin Password=webadmin \
-        Version="1.0"
+      Usage="docker run -dit -p 80:80 -p 3306:3306 -p 95:22 --name lamp-stack --restart always goulompro/lamp-stack" \
+      User=webadmin Password=webadmin \
+      Version="1.0"
 
 RUN apt-get update
 RUN apt-get upgrade -y
