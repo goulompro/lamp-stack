@@ -1,5 +1,5 @@
 
 #!/bin/sh
 
-git clone https://github.com/mattpass/ICEcoder.git cd /var/www/ICEcoder
+git clone https://github.com/mattpass/ICEcoder.git /var/www/ICEcoder
 
