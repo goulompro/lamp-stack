@@ -23,13 +23,13 @@ EXPOSE 22
 EXPOSE 80
 EXPOSE 3306
 
+COPY install_ICEcoder.sh /usr/sbin/
+RUN chmod +x /usr/sbin/install_ICEcoder.sh
+CMD ["/usr/sbin/install_ICEcoder.sh"]
+
 # Create User webadmin and use it as standard Container-User
 # Ideal for SSH
 # User: webadmin Password: webadmin
 RUN useradd -m -g 0 -p 5Y7whX6lpu7oU webadmin
 USER webadmin
 WORKDIR /home/webadmin
-
-COPY install_ICEcoder.sh /usr/sbin/
-RUN chmod +x /usr/sbin/install_ICEcoder.sh
-CMD ["/usr/sbin/install_ICEcoder.sh"]
