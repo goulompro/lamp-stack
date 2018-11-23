@@ -8,6 +8,7 @@ LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 18.04 LTS." \
 RUN apt-get update
 RUN apt-get upgrade -y
 
+# Install wanted Software
 RUN apt-get install -y -q zip unzip
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q apache2 libapache2-mod-php7.2 php7.2 php7.2-mysql mysql-server
 RUN apt-get install git nodejs npm composer nano tree vim curl ftp -y -q
@@ -16,6 +17,7 @@ RUN npm install -g -q bower grunt-cli gulp
 
 RUN apt-get upgrade -y
 
+# expose Port to the outher World
 EXPOSE 22
 EXPOSE 80
 EXPOSE 3306
