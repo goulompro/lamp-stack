@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
 
-service ssh start
-service apache2 start
-service mysql start
+sudo service ssh start
+sudo service apache2 start
+sudo service mysql start
