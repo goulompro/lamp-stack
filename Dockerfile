@@ -24,11 +24,11 @@ EXPOSE 80
 EXPOSE 3306
 
 COPY install_ICEcoder.sh /usr/sbin/
-RUN chmod +x /usr/sbin/install_ICEcoder.sh
+RUN chmod 777 /usr/sbin/install_ICEcoder.sh
 #CMD ["/usr/sbin/install_ICEcoder.sh"]
 
 COPY start.sh /usr/sbin/
-RUN chmod +x /usr/sbin/start.sh
+RUN chmod 777 /usr/sbin/start.sh
 #CMD ["/usr/sbin/start.sh"]
 
 # Create User webadmin and use it as standard Container-User
